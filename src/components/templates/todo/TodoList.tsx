@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { VFC } from 'react';
 
-const TodoList = () => (
+const TodoList: VFC = () => (
   <>
     <h1>TODO List</h1>
     <button type="button">追加</button>
