@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router';
-import Index from './components/templates';
+import TodoList from './components/templates/todo/TodoList';
 
 const App = () => (
   <div className="container">
     <Switch>
-      <Route path="/" component={Index} />
+      {/* <Route path="/" component={Index} />*/}
+      <Route path="/" component={TodoList} />
     </Switch>
   </div>
 );
