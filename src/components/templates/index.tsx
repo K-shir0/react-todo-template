@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../logo.svg';
 
-const Index = (): JSX.Element => {
+const Index = () => {
   return (
     <>
       <div className="App">

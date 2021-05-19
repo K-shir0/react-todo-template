@@ -67,6 +67,8 @@ module.exports = {
     indent: 'off',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    // Added
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     // prefer-arrow
     'prefer-arrow/prefer-arrow-functions': [
