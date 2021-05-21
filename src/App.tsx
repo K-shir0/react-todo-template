@@ -1,13 +1,13 @@
 import React, { VFC } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router';
-import TodoList from './components/pages/todo/TodoList';
+import Tasks from './components/pages/Tasks';
 
 const App: VFC = () => (
   <div className="container">
     <Switch>
       {/* <Route path="/" component={Index} /> */}
-      <Route path="/" component={TodoList} />
+      <Route path="/" component={Tasks} />
     </Switch>
   </div>
 );

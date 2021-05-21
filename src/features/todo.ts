@@ -1,16 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Todo } from '../domain/models/todo';
+import { Task } from '../domain/models/task';
 
-export type TodoState = { todos: Todo[] };
-const initialState: TodoState = { todos: [] };
+export type TaskState = { tasks: Task[] };
+const initialState: TaskState = { tasks: [] };
 
 export const todoSlice = createSlice({
   name: 'todo',
   initialState,
   reducers: {
-    getTodo: (state, action: PayloadAction<{ todos: Todo[] }>) => ({
+    getTodos: (state, action: PayloadAction<{ todos: Task[] }>) => ({
       ...state,
       todos: action.payload.todos,
+      isLoading: false,
+      error: null,
     }),
   },
 });
